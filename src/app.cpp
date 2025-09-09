@@ -23,6 +23,10 @@ bool isPrime(int x) {
         return true;
     }
 
+    if (x % 2 == 0) {
+        return false;
+    }
+
     int const TESTLAST = x / 2;
 
     for (int i = 3; i <= TESTLAST; i+=2) {
