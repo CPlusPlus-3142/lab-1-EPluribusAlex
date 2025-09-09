@@ -44,28 +44,28 @@ int closestPrime(int x) {
 /*
     outputs if prime and closest prime (if not)
 */
-void testResult(int x) {
-    if (isPrime(x)) {
-        cout << x << " is prime." << endl;
-    } else {
-        cout 
-            << x << " is not prime. Closest prime is " << closestPrime(x) 
-            << "." << endl;
-    }
-}
+// void testResult(int x) {
+//     if (isPrime(x)) {
+//         cout << x << " is prime." << endl;
+//     } else {
+//         cout 
+//             << x << " is not prime. Closest prime is " << closestPrime(x) 
+//             << "." << endl;
+//     }
+// }
 
-int main() {
-    cout << "Enter two numbers: ";
+// int main() {
+//     cout << "Enter two numbers: ";
 
-    int x1, x2;
+//     int x1, x2;
 
-    cin >> x1;
-    cin >> x2;
+//     cin >> x1;
+//     cin >> x2;
 
-    cout << endl;
+//     cout << endl;
 
-    testResult(x1);
-    testResult(x2);
+//     testResult(x1);
+//     testResult(x2);
 
-    return 0;          
-}
+//     return 0;          
+// }
