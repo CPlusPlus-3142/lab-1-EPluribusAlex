@@ -15,16 +15,20 @@ int closestPrime(int x);
     Takes int, tests if prime, and outputs bool
 */
 bool isPrime(int x) {
-    if (x <= 1)
+    if (x <= 1) {
         return false;
-    if (x == 2)
+    }
+
+    if (x == 2) {
         return true;
+    }
 
     int const TESTLAST = x / 2;
 
     for (int i = 3; i <= TESTLAST; i+=2) {
-        if (x % i == 0)
+        if (x % i == 0) {
             return false;
+        }
     }
 
     return true;
@@ -34,8 +38,9 @@ bool isPrime(int x) {
     looks for first prime starting from x and then iterating above it
 */
 int closestPrime(int x) {
-    if (x < 2)
+    if (x < 2) {
         return 2;
+    }
 
     for (int i = x ;; i++) {
         if (isPrime(i)) {
