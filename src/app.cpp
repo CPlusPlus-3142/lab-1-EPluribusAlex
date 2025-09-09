@@ -31,10 +31,10 @@ bool isPrime(int x) {
 }
 
 /*
-    looks for first prime value higher than x
+    looks for first prime starting from x and then iterating above it
 */
 int closestPrime(int x) {
-    for (int i = x + 1;; i++) {
+    for (int i = x;; i++) {
         if (isPrime(i)) {
             return i;
         }
